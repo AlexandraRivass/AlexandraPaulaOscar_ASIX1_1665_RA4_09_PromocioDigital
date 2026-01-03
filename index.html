@@ -3,22 +3,29 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="./css/styles.css"/>
         <title>Home</title>
+
+        <!--Enlace de Font Awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        <!--Enlace al favicon-->
+        <link rel="icon" href="./imagenes/logo_pestañaaa.png" >
+
     </head>
     <body>
         <header class="header">
             <nav class="nav">
                 <section class="left">
-                    <img class="logo" src="logo.png" />
+                    <img class="logo" src="./imagenes/logo.png" />
                 </section>
                 <section class="center">
-                    <a class="header-link" href="index.html">Home</a>
-                    <a class="header-link" href="library.html">Library</a>
-                    <a class="header-link" href="vet.html">Vet Clinic</a>
+                    <a class="header-link" href="index.html">Inicio</a>
+                    <a class="header-link" href="./paginas/liberia.html">Libreria</a>
+                    <a class="header-link" href="vet.html">Centro Veterinario</a>
                 </section>
                 <section class="right">
-                    <a class="header-link" href="contact.html">Contact Us</a>
+                    <a class="header-link" href="./paginas/contact.html">Contactanos</a>
                 </section>
             </nav>
         </header>
@@ -26,18 +33,18 @@
         <main class="main">
             <section class="hero">
                 <div class="container">
-                    <h1 class="title">Promotional material <br />At your fingertips</h1>
-                    <a href="#info"><button class="btn">Discover Our Latest Work</button></a>
+                    <h1 class="title">Material promocional <br />Al alcance de tus manos</h1>
+                    <a href="#info"><button class="btn">Descubre nuestro trabajo más reciente</button></a>
                 </div>
             </section>
             <section id="info" class="info">
                 <div class="left">
-                    <h1>Library</h1>
-                    <a href="library.html"><img class="link-redirect" src="lib_bg.jpg" /></a>
+                    <h1><i class="fas fa-book"></i> Mi Librería</h1>
+                    <a href="./paginas/liberia.html"><img class="link-redirect" src="./imagenes/lib_bg.jpg" /></a>
                 </div>
                 <div class="right">
-                    <h1>Vet Clinic</h1>
-                    <a href="vet.html"><img class="link-redirect" src="vet_bg.jpg  " /></a>
+                    <h1><i class="fas fa-paw" style="margin-right: 8px;"></i>Centro Veterinaria</h1>
+                    <a href="./paginas/vet.html"><img class="link-redirect" src="./imagenes/vet_bg.jpg" /></a>
                 </div>
             </section>
         </main>
@@ -45,19 +52,19 @@
         <footer class="footer">
             <nav class="nav">
                 <section class="left">
-                    <h3>Hours</h3>
-                    <p>Monday - Friday: 9AM - 6PM</p>
-                    <p>Saturday: By Appointment</p>
-                    <p>Sunday: Closed</p>
+                    <h3>Horario</h3>
+                    <p>Lunes - Viernes: 9AM - 6PM</p>
+                    <p>Sábado: Con cita previa</p>
+                    <p>Domingo: Cerrado</p>
                 </section>
                 <section class="center">
-                    <h3>Authors</h3>
+                    <h3>Autores:</h3>
                     <p>Paula Quintana</p>
                     <p>Alexandra Rivas</p>
                     <p>Oscar Perez</p>
                 </section>
                 <section class="right">
-                    <img class="logo" src="logo.png" />
+                    <img class="logo" src="./imagenes/logo.png" />
                 </section>
             </nav>
         </footer>
