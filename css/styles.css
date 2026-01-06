@@ -61,6 +61,8 @@
     width: 100%;
 }
 
+
+/* FONDO INICIO*/
 .hero {
     height: 100vh;
     overflow: hidden;
@@ -70,6 +72,21 @@
     align-items: center;
     position: relative;
     background-image: url(../imagenes/banner.gif);
+}
+
+/* FONDO VETEERINARIA*/
+.hero1{
+    height: 90vh;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-image: url(../imagenes/fondo_vet.jpg);
+}
+.fondopagina{
+    background-color: white;
 }
 
 .container {
@@ -221,3 +238,77 @@ form > button {
     gap: 15px;
     margin-bottom: 20px;
 }
+
+
+/* Estilo tabla*/
+.estilotabla {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #64a297;
+    border-radius: 15px;
+    border: 1px solid #2d4059;
+}
+        
+h2 {
+    color: #e6e6e6;
+            margin-bottom: 30px;
+            font-size: 2.2rem;
+            text-align: center;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #0f969c;
+            
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+            background-color: #abc8c3;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        th {
+            padding: 20px;
+            color: rgb(0, 0, 0);
+            font-weight: 800;
+            font-size: 1.5rem;
+            border-bottom: 3px solid #2d4059;
+            font-weight: bold;
+
+        }
+        
+        th i {
+            color: #496a64;
+        }
+        
+        tbody tr:hover {
+            background-color: rgba(205, 252, 255, 0.15);
+            transform: scale(1.01);
+        }
+        
+        td {
+            padding: 18px 20px;
+            color: #000000;
+            border-bottom: 1px solid #2d4059;
+        }
+        
+        td:first-child {
+            font-weight: 600;
+            color: #496a64;
+            width: 30%;
+            border-right: 1px solid #2d4059;
+            text-align: center;
+        }
+        
+        .section-footer {
+            margin-top: 25px;
+            color: #7f8c8d;
+            font-style: italic;
+            font-size: 0.9rem;
+            text-align: center;
+            padding-top: 15px;
+            border-top: 1px solid #2d4059;
+        }
