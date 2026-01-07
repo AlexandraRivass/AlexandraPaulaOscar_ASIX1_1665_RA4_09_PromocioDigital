@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+
+    /*Color Varibles*/
     --main-bg: #151515;
     --main-accent: #6494aa;
     --main-text: #fbfbff;
@@ -11,18 +13,30 @@
     --secondary-accent: #64a297;
     --secondary-text: #e2dadb;
     --hover-text: #c8c8c8;
+    --border: #2d4059;
+    --table-icons: #496a64;
+    --table-background: #abc8c3;
+    --element-text: #496a64;
+    --table-text: #000;
+    --table-title: #e6e6e6;
+    --table-title-border: #0f969c;
+    --shadow: #0000004d;
+    --table-hover: #cdfcff26;
 }
 
+/* Header sticky en parte superior */
 .header {
     top: 0;
     position: sticky;
 }
 
+/* Footer en parte inferior */
 .footer {
     bottom: 0;
     position: relative;
 }
 
+/* Estilos comunes header y footer */
 .header,
 .footer {
     padding: 20px 0;
@@ -32,6 +46,7 @@
     color: var(--main-text);
 }
 
+/* Flexbox para navegación y sección info */
 .nav,
 .info {
     display: flex;
@@ -39,6 +54,7 @@
     align-items: center;
 }
 
+/* Enlaces del header */
 .header-link {
     text-decoration: none;
     color: var(--main-text);
@@ -47,12 +63,14 @@
     font-size: 1.5rem;
 }
 
+/* Efecto hover enlaces */
 .header-link:hover {
     color: var(--hover-text);
     text-decoration: underline;
     font-size: 2rem;
 }
 
+/* Sección info */
 .info {
     background-color: var(--secondary-bg);
     padding: 50px 0 50px 0;
@@ -71,29 +89,35 @@
     display: flex;
     align-items: center;
     position: relative;
+}
+
+/* Fondo para página principal */
+.main-page{
     background-image: url(../imagenes/banner.gif);
 }
 
-/* FONDO VETEERINARIA*/
-.hero1{
-    height: 90vh;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    position: relative;
+/* Fondo para página veterinaria */
+.veterinaria{
     background-image: url(../imagenes/fondo_vet.jpg);
 }
-.fondopagina{
-    background-color: white;
+
+/* Fondo para página librería */
+.libreria{
+    background-image: url(../imagenes/fondo_bl.jpg);
 }
 
+/* Fondo general de páginas */
+.fondopagina{
+    background-color: var(--secondary-bg);
+}
+
+/* Contenedor principal */
 .container {
     width: 90%;
     margin: 0 5% 0 5%;
 }
 
+/* Título principal */
 .title {
     line-height: 1.2;
     margin-bottom: 10px;
@@ -104,6 +128,7 @@
     padding: 16px;
 }
 
+/* Estilo botones */
 .btn {
     transition: all 0.3s ease;
     border-radius: 8px;
@@ -116,28 +141,34 @@
     cursor: pointer;
 }
 
+/* Efecto hover botones */
 .btn:hover {
     transform: translateY(-5px);
     color: var(--main-text);
     background-color: var(--main-accent);
 }
 
+/* Margen izquierdo */
 .left {
     margin-left: 20px;
 }
 
+/* Margen específico para sección info */
 .info > .left {
     margin-left: 160px;
 }
 
+/* Margen derecho */
 .right {
     margin-right: 20px;
 }
 
+/* Margen específico para sección info */
 .info > .right {
     margin-right: 160px;
 }
 
+/* Títulos dentro de sección info */
 .info > .left > h1,
 .info > .right > h1 {
     text-align: center;
@@ -145,15 +176,18 @@
     color: var(--main-text);
 }
 
+/* Estilo del logo */
 .logo {
     height: 50px;
     width: auto;
 }
 
+/* Banner/Imagen principal */
 .banner {
     width: 100%;
 }
 
+/* Imágenes de enlace */
 .link-redirect {
     height: 270px;
     width: 450px;
@@ -161,27 +195,71 @@
     transition: all 0.3s ease;
 }
 
+/* Efecto hover imágenes */
 .link-redirect:hover {
     transform: scale(1.1);
 }
 
-/*Contact*/
+/* Estilos para página de contacto */
 .contact-page {
     padding: 40px 0px 40px 0px;
     background-color: var(--secondary-bg);
+    height: 63.4vh;
 }
 
+/* Contenedor principal con grid de 2 columnas */
+.contact-page > .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+/* Título de la página */
+.contact-page > h1 {
+    text-align: center;
+    color: var(--main-text);
+}
+
+/* Formulario de contacto */
+.contact-form {
+    width: 90%;
+}
+
+/* Información de contacto lado derecho */
+.contact-info {
+    text-align: right;
+    border-radius: 8px;
+    background-color: var(--main-accent);
+    padding: 1rem;
+}
+
+/* Estilos de texto en info */
+.contact-info > h1,
+.contact-info > p {
+    margin-bottom: 1rem;
+    color: var(--main-text);
+}
+
+/* Último párrafo sin margen inferior */
+.contact-info > p:last-child {
+    margin-bottom: 0;
+}
+
+/* Grupo de campos del formulario */
 .form-group {
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
 }
 
+/* Título del formulario */
 .contact-form > h1 {
     color: var(--main-text);
     margin-bottom: 15px;
 }
 
+/* Labels del formulario */
 .form-group label {
     display: block;
     color: var(--main-text);
@@ -189,33 +267,33 @@
     font-size: 0.9rem;
 }
 
+/* Campos de entrada */
 .form-group input,
 .form-group textarea {
     width: 100%;
     padding: 12px 15px;
     background-color: var(--main-accent);
-    border: 1px solid var(--form-border);
+    border: 1px solid var(--border);
     border-radius: 4px;
     color: var(--main-text);
     font-size: 0.9rem;
     transition: border-color 0.3s ease;
 }
 
+/* Efecto focus en campos */
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: var(--gold);
+    border-color: var(--border);
 }
 
+/* Placeholder de campos */
 .form-group input::placeholder,
 .form-group textarea::placeholder {
     color: var(--secondary-text);
 }
 
-.form-group.full-width {
-    grid-column: 1 / -1;
-}
-
+/* Fila con dos campos (ej: nombre y email) */
 .form-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -223,6 +301,7 @@
     margin-bottom: 1rem;
 }
 
+/* Botón del formulario */
 form > button {
     padding: 1rem;
     font-size: 1.1rem;
@@ -230,8 +309,10 @@ form > button {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.2s;
+    margin-bottom: 16px;
 }
 
+/* Elementos individuales de información */
 .info-item {
     display: flex;
     align-items: flex-start;
@@ -244,71 +325,109 @@ form > button {
 .estilotabla {
     width: 90%;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 30px;
-    background-color: #64a297;
+    background-color: var(--main-accent);
     border-radius: 15px;
-    border: 1px solid #2d4059;
+    border: 1px solid var(--border);
 }
         
 h2 {
-    color: #e6e6e6;
-            margin-bottom: 30px;
-            font-size: 2.2rem;
-            text-align: center;
-            padding-bottom: 15px;
-            border-bottom: 2px solid #0f969c;
-            
-        }
+    color: var(--table-title);
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--table-title-border);         
+}
         
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 0 auto;
-            background-color: #abc8c3;
-            border-radius: 10px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-        }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: var(--table-background);
+    border-radius: 10px;
+    box-shadow: 0 8px 20px var(--shadow);
+}
         
-        th {
-            padding: 20px;
-            color: rgb(0, 0, 0);
-            font-weight: 800;
-            font-size: 1.5rem;
-            border-bottom: 3px solid #2d4059;
-            font-weight: bold;
+th {
+    padding: 20px;
+    color: var(--table-text);
+    font-weight: 800;
+    font-size: 1.5rem;
+    border-bottom: 3px solid var(--border);
+    font-weight: bold;
+}
+        
+th i {
+    color: var(--table-icons);
+}
 
-        }
-        
-        th i {
-            color: #496a64;
-        }
-        
-        tbody tr:hover {
-            background-color: rgba(205, 252, 255, 0.15);
-            transform: scale(1.01);
-        }
-        
-        td {
-            padding: 18px 20px;
-            color: #000000;
-            border-bottom: 1px solid #2d4059;
-        }
-        
-        td:first-child {
-            font-weight: 600;
-            color: #496a64;
-            width: 30%;
-            border-right: 1px solid #2d4059;
-            text-align: center;
-        }
-        
-        .section-footer {
-            margin-top: 25px;
-            color: #7f8c8d;
-            font-style: italic;
-            font-size: 0.9rem;
-            text-align: center;
-            padding-top: 15px;
-            border-top: 1px solid #2d4059;
-        }
+/* Efecto hover en filas */
+tbody tr:hover {
+    background-color: var(--table-hover);
+    transform: scale(1.01);
+}
+
+td {
+    padding: 18px 20px;
+    color: var(--table-text);
+    border-bottom: 1px solid var(--border);
+}
+
+/* Primera columna de la tabla */
+td:first-child {
+    font-weight: 600;
+    color: var(--element-text);
+    width: 30%;
+    border-right: 1px solid var(--border);
+    text-align: center;
+}
+
+/* Sección de videos */
+.media{
+    margin-top: 20px;
+}
+
+/* Video de librería */
+.lib-vid{
+    width: 75%;
+    height: auto;
+}
+
+/* Video veterinaria */
+.vet-vid{
+    height: 75vh;
+    width: auto;
+}
+
+/* Contenedor del video */
+.video{
+    text-align: center;
+}
+
+/* Controles de navegación */
+.media-control{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 25%;
+}
+
+/* Botones de control */
+.media-control > button{
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-bottom: 16px;
+}
+
+/* Efecto hover botones */
+.media-control > button:hover {
+    transform: scale(1.2);
+}
